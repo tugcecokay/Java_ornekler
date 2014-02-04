@@ -1,0 +1,23 @@
+package java_calisma;
+
+import java.util.Scanner;
+
+public class Konsol {
+
+	public static void main(String[] args) {
+	
+//Konsol girdisi almak için
+		Scanner sc = new Scanner (System.in);
+		System.out.println("Lütfen ismi yazin");
+		String input = sc.nextLine();
+		
+		System.out.println("Merhaba\t" +input);
+		
+		System.out.println("Kaç yaşındasınız?");
+		int yaş = sc.nextInt();
+		System.out.println("Yaşınız\t"  + yaş +  "dır");
+		
+		
+	}
+
+}
