@@ -1,0 +1,28 @@
+package java_calisma;
+
+import java.util.Scanner;
+
+public class AlanHesaplama {
+public static void main(String[] args) {
+	Scanner sc = new Scanner(System.in);
+	System.out.println("Hangisinin alanını hesaplamak istiyorsunuz? Daire/ Dikdörtgen--> 0/1 ");
+	
+	int seçim = sc.nextInt();
+	
+	if(seçim==0){ 
+		System.out.println("Yarıçapı giriniz:");
+		
+		int yarıçap = sc.nextInt();
+		System.out.println("Dairenin alanı:" + (yarıçap*yarıçap*Math.PI));
+	}
+	else {
+		System.out.println("1.kenarı giriniz:");
+		int kenar1 = sc.nextInt();
+		
+		System.out.println("2.kenarı giriniz:");
+		int kenar2 = sc.nextInt();
+		
+		System.out.println("Dikdörtgenin alanı:" + (kenar1*kenar2));
+	}
+}
+}
