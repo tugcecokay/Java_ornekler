@@ -1,0 +1,32 @@
+package java_calisma;
+
+import java.util.Scanner;
+
+public class Kontrol_if_else {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Ortalamanızı giriniz:");
+		int ortalama = sc.nextInt();
+		
+		if(ortalama>0 && ortalama<=4){ 
+			
+				
+		if(ortalama>=2){
+			System.out.println("Toplam 42 kredilik ders alabilirsiniz");
+			
+		}
+		else{
+			System.out.println("Toplam 30 kredilik ders alabilirsiniz");
+		}
+		
+		}
+		else{
+			System.out.println("Girdiğiniz ortalama bulunmamaktadır");
+		}
+		
+	}
+
+}
