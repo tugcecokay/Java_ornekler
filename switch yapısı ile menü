@@ -1,0 +1,36 @@
+package java_calisma;
+
+import java.util.Scanner;
+
+public class Menu {
+
+	public static void main(String[] args) {
+		System.out.println("Menüden en sevdiğiniz tadı seçiniz :)");
+		System.out.println("1->Pasta\n 2->Kurabiye\n 3->Çikolata");
+		
+		Scanner sc = new Scanner(System.in);
+		
+		int secim = sc.nextInt();
+		
+		switch(secim){
+		
+		case 1:
+		System.out.println("En sevdiğiniz tat Pasta :)");
+		break;
+		
+		case 2:
+		System.out.println("En sevdiğiniz tat Kurabiye :)");
+		break;
+		
+		case 3:
+		System.out.println("En sevdiğiniz tat Çikolata :)");
+		break;
+		
+		
+		
+		
+		}
+
+	}
+
+}
