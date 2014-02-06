@@ -1,0 +1,33 @@
+package java_calisma;
+
+import java.util.Scanner;
+
+public class Rakam {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner (System.in);
+		
+		System.out.println("Bir sayi giriniz:");
+		int sayi = sc.nextInt();
+		 if(sayi>0 && sayi%2==0){
+			 System.out.println("Girdiginiz sayi pozitif çift tamsayidir");
+		 }
+		 else if(sayi<0 && sayi%2==0){
+			 System.out.println("Girdiginiz sayi negatif çift tamsayidir");
+			 
+		 }
+		 else if(sayi>0 && sayi%2==1){
+			 System.out.println("Girdiginiz sayi pozitif tek tamsayidir");
+				 }
+		 else if(sayi==0){
+			 System.out.println("Girdiginiz sayi bir tamsayidir");
+		 }
+		 else{
+			 System.out.println("Girdiginiz sayi negatif tek tamsayidir");
+				
+		 }
+			 
+	}
+
+}
