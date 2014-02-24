@@ -1,0 +1,77 @@
+package PAÜ;
+
+import java.util.Scanner;
+
+public class HesapMakinası {
+
+	public static void main(String[] args) {
+		float sayi1 = 0,sayi2 = 0;
+		Scanner sc = new Scanner (System.in);
+		String secim;
+		
+		System.out.println("İşlem yapmak istediğiniz 1.sayıyı giriniz:");
+		
+		try{
+			sayi1 = sc.nextFloat();
+		}
+		
+		catch(Exception e)
+		{
+			System.err.println("exit");
+			System.exit(-1);
+		}
+		System.out.println("İşlem yapmak istediğiniz 2.sayıyı giriniz:");
+		try{
+			sayi2 = sc.nextFloat();
+		
+		}
+		
+		catch(Exception e)
+		{
+			System.err.println("exit");
+			System.exit(-1);
+		}
+		
+		System.out.println("İşlemi giriniz:");
+		secim = sc.next();
+		
+		if(secim.equals("+") ){
+			float toplam = sayi1 + sayi2;
+			System.out.println("işleminiz:"+sayi1+"+"+sayi2+"=" +toplam);
+		}
+		else if(secim.equals("-") ){
+			float cikarma = sayi1 - sayi2;
+			System.out.println("işleminiz:"+sayi1+"-"+sayi2+"=" +cikarma);
+		}
+		else if(secim.equals("*")){
+			float carpma = sayi1*sayi2;
+			System.out.println("işleminiz:"+sayi1+"*"+sayi2+"=" +carpma);
+		}
+		else if(secim.equals("/")){ 
+			
+			if(sayi2==0){
+			System.out.println("Bu işlemde ikinci sayı sıfır olamaz!");
+			System.out.println("lütfen 2.sayıyı tekrar giriniz:");
+			try{
+				sayi2 = sc.nextFloat();
+			
+			}
+			
+			catch(Exception e)
+			{
+				System.err.println("exit");
+				System.exit(-1);
+			}
+		}
+			float bolme = sayi1/sayi2;
+			System.out.println("işleminiz:"+sayi1+"/"+sayi2+"=" +bolme);
+		}
+		
+		else {
+			System.out.println("Yanlış bir tuşa bastınız");
+		}
+	}
+	
+	
+
+}
