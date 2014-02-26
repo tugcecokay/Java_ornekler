@@ -1,0 +1,87 @@
+package java_calisma;
+
+import java.util.Scanner;
+
+public class VKI {
+
+	public VKI() {
+		
+	}
+
+	public static void main(String[] args) {
+		float boy=0, kilo=0, vki;
+		String cinsiyet = null;
+		
+		System.out.println("Vücut kitle hesaplama programına hoşgeldiniz.");
+		System.out.println("Cinsiyet e/k");
+		Scanner sc = new Scanner(System.in);
+		
+		try {
+			cinsiyet =sc.nextLine();
+			
+		} catch (Exception e) {
+			System.err.println("exit");
+			System.exit(-1);
+		}
+		
+			if(cinsiyet.equals("e")) {
+				System.out.println("Kilonuzu giriniz:" );
+				kilo = sc.nextFloat();
+				System.out.println("Boyunuzu giriniz:" );
+				boy = sc.nextFloat();
+				
+				vki = kilo/(boy*boy);
+				
+				if(vki<=20.7){
+					System.out.println("Vücut Kitle indeksiniz:" +vki);
+					System.out.println(" Zayıfsınız.Sağlığınızı riske atmayın sağlıklı yiyeceklerle beslenin!");
+				}
+				 else if(vki>20.7 && vki<=26.4){
+					 System.out.println("Vücut Kitle indeksiniz:" +vki);
+					 System.out.println("Normalsiniz.Sağlıklı beslenmeye dikkat edin:)");
+				 }
+				 else if(vki>26.5 && vki<=31.1){
+					 System.out.println("Vücut Kitle indeksiniz:" +vki);
+					 System.out.println("Şişmanlık sınırındasınız. Dikkatli beslenin.");
+				 }
+				 else if(vki>31.2){
+					 System.out.println("Vücut Kitle indeksiniz:" +vki);
+					 System.out.println("Obezite.Sağlığınız tehlikede lütfen hekiminize başvurun!");
+				 }
+				
+			}
+			else {
+				System.out.println("Kilonuzu giriniz:" +kilo);
+				kilo = sc.nextFloat();
+				System.out.println("Boyunuzu giriniz:");
+				boy = sc.nextFloat();
+				
+				vki = kilo/(boy*boy);
+				
+				if(vki<=19.1){
+					System.out.println("Vücut Kitle indeksiniz:" +vki);
+					System.out.println("Zayıfsınız.Sağlığınızı riske atmayın sağlıklı yiyeceklerle beslenin!");
+				}
+				 else if(vki>19.1 && vki<=25.8){
+					 System.out.println("Vücut Kitle indeksiniz:" +vki);
+					 System.out.println("Normalsiniz.Sağlıklı beslenmeye dikkat edin:)");
+				 }
+				 else if(vki>25.9 && vki<=32.2){
+					 System.out.println("Vücut Kitle indeksiniz:" +vki);
+					 System.out.println("Şişmanlık sınırındasınız. Dikkatli beslenin.");
+				 }
+				 else if(vki>32.3){
+					 System.out.println("Vücut Kitle indeksiniz:" +vki);
+					 System.out.println("Obezite.Sağlığınız tehlikede lütfen hekiminize başvurun!");
+				 }
+				
+			}
+		
+		
+		
+		
+		
+		
+	}
+
+}
